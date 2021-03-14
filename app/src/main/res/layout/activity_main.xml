@@ -6,23 +6,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#E9F5EC"
     tools:context=".MainActivity"
     android:gravity="center"
-    android:padding="30dp">
+    android:padding="60dp">
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:scrollbars="vertical"
         android:inputType="textEmailAddress"
-        android:textStyle="bold"
-        />
+        android:scrollbars="vertical"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/button1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="64dp"
         android:enabled="false"
         android:text="Añadir"
 
@@ -31,7 +31,7 @@
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="64dp"
         android:enabled="false"
         android:text="Borrar"
         app:backgroundTint="#FF0000" />
@@ -39,7 +39,7 @@
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="64dp"
         android:text="Siguiente"
         app:backgroundTint="#FF0000" />
 

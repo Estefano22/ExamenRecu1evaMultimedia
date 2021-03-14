@@ -8,7 +8,8 @@ import androidx.appcompat.app.AppCompatActivity
 class SecondActivity : AppCompatActivity() {
 
     companion object {
-        const val PARAM1 = "_____ "
+        const val PARAM1 = "__ "
+        const val PARAM2 = "__ "
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,12 +17,16 @@ class SecondActivity : AppCompatActivity() {
         setContentView(R.layout.activity_second)
         val textView = findViewById<TextView>(R.id.textView2)
 
-        val text = intent.getStringExtra(PARAM1)
+        val text1 = intent.getStringExtra(PARAM1)
+        val text2 = intent.getStringExtra(PARAM2)
 
-        text?.let {
-            textView.text = it.replace("_____ ", "\n")
+        text1?.let {
+            textView.text = it.replace("__ ", "\n")
         }
 
+        text2?.let {
+            textView.text = it.replace("__ ", "\n")
+        }
 
     }
 

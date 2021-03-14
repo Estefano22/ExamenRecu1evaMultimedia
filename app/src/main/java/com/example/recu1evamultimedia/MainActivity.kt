@@ -40,9 +40,10 @@ class MainActivity : AppCompatActivity() {
         })
 
         button1.setOnClickListener {
-            val text = editText.text
+            val text1 = editText.text
             val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra(SecondActivity.PARAM1, text.toString())
+            intent.putExtra(SecondActivity.PARAM1, text1.toString())
+
 
 
 
@@ -54,9 +55,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         button3.setOnClickListener {
-            val text = editText.text
+            val text2 = editText.text
             val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra(SecondActivity.PARAM1, text.toString())
+            intent.putExtra(SecondActivity.PARAM2, text2.toString())
             startActivity(intent)
 
         }
